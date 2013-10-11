@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<people>
+  <!--<person>
+    <id>01</id>
+    <visible>true</visible>
+    <firstName>Newton</firstName>
+    <middleName></middleName>
+    <lastName>Gore</lastName>
+    <title>President and CEO</title>
+    <description><![CDATA[<br /><br /><br /><br /><br />]]></description>
+    <email><![CDATA[ <a href="mailto:Newt@GoldKeySolutions.com">Newt@GoldKeySolutions.com</a>]]></email>
+    <phone>8188650006</phone>
+    <fax>8185972389</fax>
+    <streetAddress>
+      28118 Agoura Road, Suite 202
+    </streetAddress>
+    <city>Agoura Hills</city>
+    <state>CA</state>
+    <postalCode>91301</postalCode>
+    <country>USA</country>
+    <imageUrl>person-Newt.jpg</imageUrl>
+    <imageAltText>Newton Gore - CEO</imageAltText>
+  </person>-->
+  <person>
+    <id>02</id>
+    <visible>true</visible>
+    <firstName>Karen</firstName>
+    <middleName>
+    </middleName>
+    <lastName>Clancy</lastName>
+    <title>Sales and Training</title>
+    <description><![CDATA[<br /><br /><br /><br />]]></description>
+    <email><![CDATA[ <a href="mailto:KarenC@GoldKeySolutions.com">KarenC@GoldKeySolutions.com</a>]]></email>
+    <phone>8188650006</phone>
+    <fax></fax>
+    <streetAddress>
+          </streetAddress>
+    <city></city>
+    <state></state>
+    <postalCode></postalCode>
+    <country>USA</country>
+    <imageUrl>person-Karen.jpg</imageUrl>
+    <imageAltText>Image of Karen Clancy</imageAltText>
+  </person>
+  <person>
+    <id>03</id>
+    <visible>true</visible>
+    <firstName>Leo</firstName>
+    <middleName></middleName>
+    <lastName>Aguirre</lastName>
+    <title>Application Management</title>
+    <description><![CDATA[<br /><br /><br /><br />]]></description>
+    <email><![CDATA[ <a href="mailto:Leo@GoldKeySolutions.com">Leo@GoldKeySolutions.com</a>]]></email>
+    <phone>8188650006</phone>
+    <fax></fax>
+    <streetAddress>
+      
+    </streetAddress>
+    <city></city>
+    <state></state>
+    <postalCode></postalCode>
+    <country>USA</country>
+    <imageUrl>person-Leo.jpg</imageUrl>
+    <imageAltText>Image of Leo Aguirre</imageAltText>
+  </person>
+  <!--<person>
+    <id>04</id>
+    <visible>true</visible>
+    <firstName>Philip</firstName>
+    <middleName></middleName>
+    <lastName>Bokan</lastName>
+    <title>Director of Sales</title>
+    <description><![CDATA[<br /><br /><br /><br /><br />]]></description>
+    <email><![CDATA[ <a href="mailto:Philip@GoldKeySolutions.com">Philip@GoldKeySolutions.com</a>]]></email>
+    <phone>8188650006</phone>
+    <fax>8185972389</fax>
+    <streetAddress>
+      28118 Agoura Road, Suite 202
+    </streetAddress>
+    <city>Agoura Hills</city>
+    <state>CA</state>
+    <postalCode>91301</postalCode>
+    <country>USA</country>
+    <imageUrl>person-Philip.jpg</imageUrl>
+    <imageAltText>Image of Philip</imageAltText>
+  </person>
+  <person>
+    <id>05</id>
+    <visible>true</visible>
+    <firstName>Greg</firstName>
+    <middleName>
+    </middleName>
+    <lastName>Gawthrop</lastName>
+    <title>AR Specialist</title>
+    <description><![CDATA[<br /><br /><br /><br /><br />]]></description>
+    <email><![CDATA[ <a href="mailto:Greg@GoldKeySolutions.com">Greg@GoldKeySolutions.com</a>]]></email>
+    <phone>8188650006</phone>
+    <fax>8185972389</fax>
+    <streetAddress>
+      28118 Agoura Road, Suite 202
+    </streetAddress>
+    <city>Agoura Hills</city>
+    <state>CA</state>
+    <postalCode>91301</postalCode>
+    <country>USA</country>
+    <imageUrl>person-GregGawthrop.jpg</imageUrl>
+    <imageAltText></imageAltText>
+  </person>-->
+  <!--<person>
+    <id>06</id>
+    <visible>true</visible>
+    <firstName>Cris</firstName>
+    <middleName>
+    </middleName>
+    <lastName>Dovich</lastName>
+    <title>Sales and Training Executive</title>
+    <description><![CDATA[<br /><br /><br /><br /><br />]]></description>
+    <email><![CDATA[ <a href="mailto:Cris@GoldKeySolutions.com">Cris@GoldKeySolutions.com</a>]]></email>
+    <phone>8188650006</phone>
+    <fax>8185972389</fax>
+    <streetAddress>
+      28118 Agoura Road, Suite 202
+    </streetAddress>
+    <city>Agoura Hills</city>
+    <state>CA</state>
+    <postalCode>91301</postalCode>
+    <country>USA</country>
+    <imageUrl>person-Cris.jpg</imageUrl>
+    <imageAltText>Image of Cris Dovich</imageAltText>
+  </person>-->
+  <!--<person>
+    <id>07</id>
+    <visible>true</visible>
+    <firstName>Nuria</firstName>
+    <middleName></middleName>
+    <lastName>Candel</lastName>
+    <title>Sales Consultant</title>
+    <description><![CDATA[<br /><br /><br /><br /><br />]]></description>
+    <email><![CDATA[ <a href="mailto:Nuria@GoldKeySolutions.com">Nuria@GoldKeySolutions.com</a>]]></email>
+    <phone>8188650006</phone>
+    <fax>8185972389</fax>
+    <streetAddress>
+      28118 Agoura Road, Suite 202
+    </streetAddress>
+    <city>Agoura Hills</city>
+    <state>CA</state>
+    <postalCode>91301</postalCode>
+    <country>USA</country>
+    <imageUrl>person-Nuria.jpg</imageUrl>
+    <imageAltText>Image of Nuria Candel</imageAltText>
+  </person>-->
+  <!--<person>
+    <id>08</id>
+    <visible>true</visible>
+    <firstName>Mike</firstName>
+    <middleName>
+    </middleName>
+    <lastName>Allen</lastName>
+    <title>Lead Programmer</title>
+    <description><![CDATA[<br /><br /><br /><br /><br />]]></description>
+    <email><![CDATA[ <a href="mailto:Mike@GoldKeySolutions.com">Mike@GoldKeySolutions.com</a>]]></email>
+    <phone>8188650006</phone>
+    <fax>8185972389</fax>
+    <streetAddress>
+      28118 Agoura Road, Suite 202
+    </streetAddress>
+    <city>Agoura Hills</city>
+    <state>CA</state>
+    <postalCode>91301</postalCode>
+    <country>USA</country>
+    <imageUrl>person-mike.jpg</imageUrl>
+    <imageAltText>Image of Mike Allen</imageAltText>
+  </person>-->
+  <person>
+    <id>09</id>
+    <visible>true</visible>
+    <firstName>Lee</firstName>
+    <middleName>
+    </middleName>
+    <lastName>O'Donnell</lastName>
+    <title>Senior Programmer</title>
+    <description><![CDATA[<br /><br /><br /><br /><br />]]></description>
+    <email><![CDATA[ <a href="mailto:Lee@GoldKeySolutions.com">Lee@GoldKeySolutions.com</a>]]></email>
+    <phone>8188650006</phone>
+    <fax></fax>
+    <streetAddress>
+    </streetAddress>
+    <city></city>
+    <state>CA</state>
+    <postalCode></postalCode>
+    <country>USA</country>
+    <imageUrl>person-Lee.jpg</imageUrl>
+    <imageAltText>Image of Lee o'Donnell</imageAltText>
+  </person>
+  
+  
+</people>

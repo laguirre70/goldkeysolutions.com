@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CountriesService>
+  <country name="United States" value="US">
+    <state name="Alaska" abreviation="AK"/>
+    <state name="Alabama" abreviation="AL"/>
+    <state name="Arkansas" abreviation="AR"/>
+    <state name="Arizona" abreviation="AZ"/>
+    <state name="California" abreviation="CA"/>
+    <state name="Colorado" abreviation="CO"/>
+    <state name="Connecticut" abreviation="CT"/>
+    <state name="District of Columbia" abreviation="DC"/>
+    <state name="Delaware" abreviation="DE"/>
+    <state name="Florida" abreviation="FL"/>
+    <state name="Georgia" abreviation="GA"/>
+    <state name="Hawaii" abreviation="HI"/>
+    <state name="Iowa" abreviation="IA"/>
+    <state name="Idaho" abreviation="ID"/>
+    <state name="Illinois" abreviation="IL"/>
+    <state name="Indiana" abreviation="IN"/>
+    <state name="Kansas" abreviation="KS"/>
+    <state name="Kentucky" abreviation="KY"/>
+    <state name="Louisiana" abreviation="LA"/>
+    <state name="Massachusetts" abreviation="MA"/>
+    <state name="Maryland" abreviation="MD"/>
+    <state name="Maine" abreviation="ME"/>
+    <state name="Michigan" abreviation="MI"/>
+    <state name="Minnesota" abreviation="MN"/>
+    <state name="Missouri" abreviation="MO"/>
+    <state name="Mississippi" abreviation="MS"/>
+    <state name="Montana" abreviation="MT"/>
+    <state name="North Carolina" abreviation="NC"/>
+    <state name="North Dakota" abreviation="ND"/>
+    <state name="Nebraska" abreviation="NE"/>
+    <state name="New Hampshire" abreviation="NH"/>
+    <state name="New Jersey" abreviation="NJ"/>
+    <state name="New Mexico" abreviation="NM"/>
+    <state name="Nevada" abreviation="NV"/>
+    <state name="New York" abreviation="NY"/>
+    <state name="Ohio" abreviation="OH"/>
+    <state name="Oklahoma" abreviation="OK"/>
+    <state name="Oregon" abreviation="OR"/>
+    <state name="Pennsylvania" abreviation="PA"/>
+    <state name="Rhode Island" abreviation="RI"/>
+    <state name="South Carolina" abreviation="SC"/>
+    <state name="South Dakota" abreviation="SD"/>
+    <state name="Tennesee" abreviation="TN"/>
+    <state name="Texas" abreviation="TX"/>
+    <state name="Utah" abreviation="UT"/>
+    <state name="Virginia" abreviation="VA"/>
+    <state name="Vermont" abreviation="VT"/>
+    <state name="Washington" abreviation="WA"/>
+    <state name="Wisconsin" abreviation="WI"/>
+    <state name="Wyoming" abreviation="WY"/>
+  </country>
+  <country name="Australia" value="AU">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Austria" value="AT">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Brazil" value="BR">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Canada" value="CA">
+    <state name="Alberta" abreviation="AB"/>
+    <state name="British Columbia" abreviation="BC"/>
+    <state name="Manitoba" abreviation="MB"/>
+    <state name="New Brunswick" abreviation="NB"/>
+    <state name="Newfoundland and Labrador" abreviation="NL"/>
+    <state name="Northwest Territories" abreviation="NT"/>
+    <state name="Nova Scotia" abreviation="NS"/>
+    <state name="Nunavut" abreviation="NU"/>
+    <state name="Ontario" abreviation="ON"/>
+    <state name="Prince Edward Island" abreviation="PE"/>
+    <state name="Quebec" abreviation="QC"/>
+    <state name="Saskatchewan" abreviation="SK"/>
+    <state name="Yukon" abreviation="YT"/>
+  </country>
+  <country name="China" value="CN">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="France" value="FR">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Germany" value="DE">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Hong Kong" value="HK">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Italy" value="IT">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Japan" value="JP">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Mexico" value="MX">
+    <state name="Aguascalientes" abreviation="Ags"/>
+    <state name="Baja California" abreviation="BCN"/>
+    <state name="Baja California Sur" abreviation="BCS"/>
+    <state name="Campeche" abreviation="Camp"/>
+    <state name="Chiapas" abreviation="Chis"/>
+    <state name="Chihuahua" abreviation="Chih"/>
+    <state name="Coahuila" abreviation="Coah"/>
+    <state name="Colima" abreviation="Col"/>
+    <state name="Distrito Federal" abreviation="DF"/>
+    <state name="Durango" abreviation="Dgo"/>
+    <state name="Guanajuato" abreviation="Gto"/>
+    <state name="Guerrero" abreviation="Gro"/>
+    <state name="Hidalgo" abreviation="Hgo"/>
+    <state name="Jalisco" abreviation="Jal"/>
+    <state name="México" abreviation="Méx"/>
+    <state name="Michoacán" abreviation="Mich"/>
+    <state name="Morelos" abreviation="Mor"/>
+    <state name="Nayarit" abreviation="Nay"/>
+    <state name="Nuevo León" abreviation="NL"/>
+    <state name="Oaxaca" abreviation="Oax"/>
+    <state name="Puebla" abreviation="Pue"/>
+    <state name="Querétaro" abreviation="Qro"/>
+    <state name="Quintana Roo" abreviation="QR"/>
+    <state name="San Luis Potosí" abreviation="SLP"/>
+    <state name="Sinaloa" abreviation="Sin"/>
+    <state name="Sonora" abreviation="Son"/>
+    <state name="Tabasco" abreviation="Tab"/>
+    <state name="Tamaulipas" abreviation="Tamps"/>
+    <state name="Tlaxcala" abreviation="Tlax"/>
+    <state name="Veracruz" abreviation="Ver"/>
+    <state name="Yucatán" abreviation="Yuc"/>
+    <state name="Zacatecas" abreviation="Zac"/>
+  </country>
+  <country name="Netherlands" value="NL">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Portugal" value="PT">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Singapore" value="SG">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Spain" value="ES">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Switzerland" value="CH">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="United Kingdom" value="GB">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Albania" value="AL">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Algeria" value="DZ">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="American Samoa" value="AS">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Andorra" value="AD">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Angola" value="AO">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Anguilla" value="AI">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Antarctica" value="AQ">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Antigua And Barbuda" value="AG">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Argentina" value="AR">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Armenia" value="AM">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Aruba" value="AW">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Azerbaijan" value="AZ">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Bahamas" value="BS">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Bahrain" value="BH">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Bangladesh" value="BD">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Barbados" value="BB">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Belarus" value="BY">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Belgium" value="BE">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Belize" value="BZ">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Benin" value="BJ">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Bermuda" value="BM">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Bhutan" value="BT">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Bolivia" value="BO">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Bosnia And Herzegowina" value="BA">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Botswana" value="BW">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Bouvet Island" value="BV">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="British Indian Ocean Territory" value="IO">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Brunei Darussalam" value="BN">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Bulgaria" value="BG">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Burkina Faso" value="BF">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Burundi" value="BI">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Cambodia" value="KH">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Cameroon" value="CM">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Cape Verde" value="CV">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Cayman Islands" value="KY">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Central African Republic" value="CF">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Chad" value="TD">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Chile" value="CL">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Christmas Island" value="CX">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Cocos (Keeling) Islands" value="CC">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Colombia" value="CO">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Comoros" value="KM">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Congo" value="CG">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Cook Islands" value="CK">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Costa Rica" value="CR">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Cote D'Ivoire" value="CI">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Croatia" value="HR">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Cuba" value="CU">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Cyprus" value="CY">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Czech Republic" value="CZ">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Denmark" value="DK">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Djibouti" value="DJ">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Dominica" value="DM">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Dominican Republic" value="DO">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="East Timor" value="TP">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Ecuador" value="EC">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Egypt" value="EG">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="El Salvador" value="SV">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Equatorial Guinea" value="GQ">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Eritrea" value="ER">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Estonia" value="EE">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Ethiopia" value="ET">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Falkland Islands (Malvinas)" value="FK">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Faroe Islands" value="FO">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Fiji" value="FJ">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Finland" value="FI">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="French Guiana" value="GF">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="French Polynesia" value="PF">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="French Southern Territories" value="TF">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Gabon" value="GA">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Gambia" value="GM">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Georgia" value="GE">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Ghana" value="GH">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Gibraltar" value="GI">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Greece" value="GR">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Greenland" value="GL">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Grenada" value="GD">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Guadeloupe" value="GP">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Guam" value="GU">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Guatemala" value="GT">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Guinea" value="GN">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Guinea-Bissau" value="GW">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Guyana" value="GY">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Haiti" value="HT">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Heard And Mc Donald Islands" value="HM">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Holy See (Vatican City State)" value="VA">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Honduras" value="HN">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Hungary" value="HU">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Icel And" value="IS">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="India" value="IN">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Indonesia" value="ID">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Iran (Islamic Republic Of)" value="IR">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Iraq" value="IQ">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Ireland" value="IE">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Israel" value="IL">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Jamaica" value="JM">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Jordan" value="JO">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Kazakhstan" value="KZ">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Kenya" value="KE">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Kiribati" value="KI">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Korea, Dem People'S Republic" value="KP">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Korea, Republic Of" value="KR">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Kuwait" value="KW">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Kyrgyzstan" value="KG">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Lao People'S Dem Republic" value="LA">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Latvia" value="LV">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Lebanon" value="LB">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Lesotho" value="LS">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Liberia" value="LR">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Libyan Arab Jamahiriya" value="LY">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Liechtenstein" value="LI">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Lithuania" value="LT">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Luxembourg" value="LU">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Macau" value="MO">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Macedonia" value="MK">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Madagascar" value="MG">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Malawi" value="MW">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Malaysia" value="MY">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Maldives" value="MV">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Mali" value="ML">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Malta" value="MT">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Marshall Islands" value="MH">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Martinique" value="MQ">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Mauritania" value="MR">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Mauritius" value="MU">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Mayotte" value="YT">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Micronesia, Federated States" value="FM">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Moldova, Republic Of" value="MD">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Monaco" value="MC">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Mongolia" value="MN">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Montserrat" value="MS">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Morocco" value="MA">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Mozambique" value="MZ">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Myanmar" value="MM">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Namibia" value="NA">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Nauru" value="NR">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Nepal" value="NP">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Netherlands Ant Illes" value="AN">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="New Caledonia" value="NC">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="New Zealand" value="NZ">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Nicaragua" value="NI">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Niger" value="NE">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Nigeria" value="NG">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Niue" value="NU">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Norfolk Island" value="NF">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Northern Mariana Islands" value="MP">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Norway" value="NO">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Oman" value="OM">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Pakistan" value="PK">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Palau" value="PW">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Panama" value="PA">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Papua New Guinea" value="PG">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Paraguay" value="PY">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Peru" value="PE">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Philippines" value="PH">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Pitcairn" value="PN">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Poland" value="PL">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Puerto Rico" value="PR">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Qatar" value="QA">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Reunion" value="RE">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Romania" value="RO">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Russian Federation" value="RU">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Rwanda" value="RW">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Saint K Itts And Nevis" value="KN">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Saint Lucia" value="LC">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Saint Vincent, The Grenadines" value="VC">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Samoa" value="WS">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="San Marino" value="SM">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Sao Tome And Principe" value="ST">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Saudi Arabia" value="SA">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Senegal" value="SN">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Seychelles" value="SC">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Sierra Leone" value="SL">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Slovakia (Slovak Republic)" value="SK">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Slovenia" value="SI">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Solomon Islands" value="SB">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Somalia" value="SO">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="South Africa" value="ZA">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="South Georgia , S Sandwich Is." value="GS">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Sri Lanka" value="LK">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="St. Helena" value="SH">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="St. Pierre And Miquelon" value="PM">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Sudan" value="SD">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Suriname" value="SR">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Svalbard, Jan Mayen Islands" value="SJ">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Sw Aziland" value="SZ">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Sweden" value="SE">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Syrian Arab Republic" value="SY">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Taiwan" value="TW">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Tajikistan" value="TJ">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Tanzania, United Republic Of" value="TZ">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Thailand" value="TH">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Togo" value="TG">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Tokelau" value="TK">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Tonga" value="TO">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Trinidad And Tobago" value="TT">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Tunisia" value="TN">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Turkey" value="TR">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Turkmenistan" value="TM">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Turks And Caicos Islands" value="TC">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Tuvalu" value="TV">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Uganda" value="UG">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Ukraine" value="UA">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="United Arab Emirates" value="AE">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="United States Minor Is." value="UM">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Uruguay" value="UY">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Uzbekistan" value="UZ">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Vanuatu" value="VU">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Venezuela" value="VE">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Viet Nam" value="VN">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Virgin Islands (British)" value="VG">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Virgin Islands (U.S.)" value="VI">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Wallis And Futuna Islands" value="WF">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Western Sahara" value="EH">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Yemen" value="YE">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Yugoslavia" value="YU">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Zaire" value="ZR">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Zambia" value="ZM">
+    <state name="N/A" value="none"/>
+  </country>
+  <country name="Zimbabwe" value="ZW">
+    <state name="N/A" value="none"/>
+  </country>
+
+
+</CountriesService>
+

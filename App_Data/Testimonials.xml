@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<testimonials>
+  <testimonial>
+    <id>05</id>
+    <visible>true</visible>
+    <title>Unbelivable Support"</title>
+    <date>2009-10-21T09:48:32.0Z</date>
+    <content>
+      I want to express my sincere thanks for the Support service I received. This is a Gold Key support service, the best I've ever experienced in the recent 10 years as a hotel Systems Manager.
+      Although it's the problem from the desktop itself, you still help me when I told you it's a risk to rebuild it due to so many other applications on it. And despite the time difference, you schedule the support happens during my working time which keeps you working late.
+      Concierge Assistant is a very good application, which is now widely used in our hotel. Everyone loves to use it. It helps us a lot to serve our guests much better.
+      Again, many thanks for your help!”
+    </content>
+    <testifier>Joyce Liu</testifier>
+    <testifierTitle>Systems Manager</testifierTitle>
+    <testifierCompany>The Sydney Harbour Marriott Hotel</testifierCompany>
+    <imageUrl></imageUrl>
+    <imageAltText></imageAltText>
+  </testimonial>
+  <testimonial>
+    <id>04</id>
+    <visible>true</visible>
+    <title>Our international multilingual concierge team uses CA to share guest request information with other appropriate staff.  This instantly enables us to fulfill the desires of our Residents and Guests professionally and quickly"</title>
+    <date>2009-08-18T09:48:32.0Z</date>
+    <content>The World’s staff provides detailed information on each port of call and CA enables them to tailor and deliver custom itineraries to each Resident based on their preferences. “This is a different concierge process than any other operation,” said Leger, who is a Les Clefs d’Or member and manages three on-board concierges from her shore-based office in Miramar. “I research each port of call in advance and upload my findings through our satellite link to the shipboard system daily to synchronize our databases. Gold Key created a Remote Contact Manager that enables me to export my findings instantaneously to the ship so Residents are up to date with the latest in-port events.” </content>
+    <testifier>Ceci Leger</testifier>
+    <testifierTitle>Corporate Concierge for ResidenSea</testifierTitle>
+    <testifierCompany>The World</testifierCompany>
+    <imageUrl></imageUrl>
+    <imageAltText></imageAltText>
+  </testimonial>
+  <testimonial>
+    <id>03</id>
+    <visible>true</visible>
+    <title>The Concierge Assistant software is our 'bible' for managing guests at a mega-resort,"</title>
+    <date>2009-04-01T09:48:32.0Z</date>
+    <content>With a common vision for service excellence, Gold Key Solutions and The Venetian have created a formula for continued guest service successes. "I cannot imagine being able to provide the world class service that we do so effortlessly without the support and guidance of Gold Key Solutions and Concierge Assistant," says Bell-Holland, laughing, "I prefer not to imagine life without it!"</content>
+    <testifier>Tyra Bell-Holland</testifier>
+    <testifierTitle>Executive Director of Concierge Services </testifierTitle>
+    <testifierCompany>The Venetian Resort-Hotel-Casino</testifierCompany>
+    <imageUrl></imageUrl>
+    <imageAltText></imageAltText>
+  </testimonial>
+
+  <testimonial>
+    <id>02</id>
+    <visible>true</visible>
+    <title>It saves me so much time. I can review the details of an event and oversee deliverables in five minutes. I was kissing my computer after the last wedding!"</title>
+    <date>2008-05-30T09:48:32.0Z</date>
+    <content>
+      "We are so new we have not been rated yet," said Seven Stars Concierge Services Manager Meghann Hussey, "But we are implementing guest service standards and creating a unique brand to achieve the highest possible rating. Our focus on extraordinary service will lead us there." Hussey, who traded in the white powder snow of Whistler Resort in British Columbia for the white sands of the Caribbean at Seven Stars, noted her first order of business was to implement a hospitality software package that would enable her and her staff of five to focus on exceeding guest requests instead of paperwork.
+    </content>
+    <testifier>Meghann Hussey</testifier>
+    <testifierTitle>Concierge Services Manager</testifierTitle>
+    <testifierCompany>Seven Stars Resort</testifierCompany>
+    <imageUrl></imageUrl>
+    <imageAltText></imageAltText>
+  </testimonial>
+
+
+  <testimonial>
+    <id>01</id>
+    <visible>true</visible>
+    <title>We are providing better service because we have better, faster, more effective communication between departments with The Concierge Assistant,”</title>
+    <date>2008-10-08T09:48:32.0Z</date>
+    <content>
+      Alvarez also appreciates how the system supports more personalized guest itineraries by matching them to guest profiles and printing them on Grove Park Inn stationary. “For example, if guests are going to the arts and crafts show in Weaverville, the system reminds us of their dining preferences and suggests options in the area that they might enjoy. Guests can plan their whole day around our recommendation or return to the hotel for dinner. In either event, they are always impressed that we anticipated their requests.”
+    </content>
+    <testifier>Oscar Alvarez</testifier>
+    <testifierTitle>Front Office Manager</testifierTitle>
+    <testifierCompany>The Grove Park Inn Resort</testifierCompany>
+    <imageUrl></imageUrl>
+    <imageAltText></imageAltText>
+  </testimonial>
+
+</testimonials>

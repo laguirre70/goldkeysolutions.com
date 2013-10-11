@@ -1,0 +1,139 @@
+body {
+  background-color: #EEEEFF;
+  font-family: Verdana, Arial;
+  font-size: 0.9em;
+}
+
+fieldset {
+  padding: 0 10px 10px 10px;
+  margin: 11px;
+  width: 300px;
+  display: block;
+}
+
+div.input {
+  margin: 7px 0;
+}
+
+legend {
+  padding: 5px;
+  color: #999999;
+}
+
+label {
+  display: block;
+  width: 85px;
+  float: left;
+  text-align: right;
+  padding-right: 5px;
+}
+
+input.textbox {
+  width: 170px;
+}
+
+input.textboxSmall {
+  width: 40px;
+}
+
+#CodeIncorrectLabel {
+  color: Red;
+}
+
+#CodeCorrectLabel {
+  color: Green;
+}
+
+#Note {
+  padding: 0;
+  margin: 11px;
+  margin-bottom: -7px;
+  width: 320px;
+  font-size: 0.8em;
+  color: Red;
+}
+
+#PromptDiv {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+#ActionDiv {
+  padding: 0 0 10px 10px;
+  margin: 11px;
+  margin-right: 0;
+  width: 314px;
+  text-align:right;
+}
+
+fieldset #ActionDiv{
+  padding: 0;
+  margin: 0;
+  width: auto;
+  text-align:right;
+}
+
+#CaptchaDiv {
+  margin: 0;
+  padding: 0;
+  width:265px;
+  height:50px;
+  padding-bottom: 5px;
+}
+
+#CaptchaImage {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width:240px;
+  height:50px;
+}
+
+#CaptchaIcons {
+  width: 22px;
+  height: 50px;
+  float: right;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+td#CaptchaIcons {
+  padding-left: 3px;
+}
+
+#CaptchaIcons img {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 3px;
+}
+
+*html #CaptchaIcons img {
+  margin-bottom: -2px;
+}
+
+.placeholder {
+  visibility: hidden;
+  width:0 !important;
+  height:0 !important;
+}
+
+*html .placeholder {
+  display: none !important;
+}
+
+#CaptchaPreviewDiv {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5px;
+}
+
+div.FeaturesInput {
+  margin: 7px 0;
+}
+
+div.FeaturesInput label {
+  width: 110px;
+}

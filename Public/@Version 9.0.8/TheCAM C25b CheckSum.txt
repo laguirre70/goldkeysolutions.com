@@ -1,0 +1,4 @@
+//
+// File Checksum Integrity Verifier version 2.05.
+//
+6017f98447ea8bd6e4ee4f5f8199c0c5 thecam.exe

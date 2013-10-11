@@ -1,0 +1,105 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Microsoft Visual Studio, see http://msdn.microsoft.com/vstudio/" />
+    <meta name="keywords" content="Concierge, Concierge Assistant, Concierge Software, Service, Superb Service, Hotel, Hotel Software, Tracking Activities Software, Hospitality Software, Hospitality, VIP Services, Casino Services, Guest Services, Lost and Found, Hotel Lost and Found, Lost and Found Software, Lost and Found Program, Key Control, Key Control Software, Key Control Program, Hotel Key Control, Gold Key Software, Go Concierge, GoConcierge, Web Based, Windows Based, The Concierge Assistant, CA Web, Voucher Software, Voucher Assistant, Accounting Software, PCI, PCI Compliant, Visa, PCI-DDS, Hospital, SAAS, Compcierge, Traingle Concierge, Opera, Springer Miller, SpaSoft" />
+    <meta name="Description" content="Gold Key Solutions develops the best Concierge, Guest Services, Hospitality and Concierge Hospital Software." />
+    <meta name="copyright" content="Copyright (c) 2009 Gold Key Solutions, Inc. All rights reserved." />
+    <meta name="verify-v1" content="sjHtDyqL9fe6Mv0trgUPFt5YEe1wu1QoVA6geAeElMk=" />
+    <link href="~/App_Themes/css-print.css" rel="stylesheet" type="text/css" media="print" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title>Gold Key Solutions</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
+    <!--
+
+TOP INFORMATION
+
+-->
+    <div id="top-information">
+        <div id="logo">
+             <a href="Default.aspx">
+                <img src="images/GKS-Long.jpg" alt="Gold Key Solutions, Inc." /></a> </div>
+        <div id="top-information-home">
+            <a href="http://help.goldkeysolutions.com/Knowledgebase/default.aspx" target="_blank">Help and Support</a>
+        </div>
+        <div id="top-information-phone">
+            818-865-0006<br />
+            <a href="Contact.aspx">info@goldkeysolutions.com</a><br />
+            <a href="ContactDemo.aspx">Request Demo</a></div>
+    </div>
+<div id="translate">
+<div id="google_translate_element" ></div></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!--
+
+TOP NAV
+
+-->
+    <div class="none">
+        <a href="#maincontent">skip to the main content area of this page</a></div>
+    <div id="nav-main">
+        <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal"
+            Width="400px" CssClass="menu-main" MaximumDynamicDisplayLevels="0" StaticSelectedStyle-CssClass="StaticSelectedStyle" />
+        <div>
+            &nbsp;</div>
+    </div>
+    <a id="maincontent"></a>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <!--
+
+FOOTER
+
+-->
+    <div id="footer">
+        Copyright &copy; 2009 Gold Key Solutions, Inc. <a href="LegalNotice.aspx">Terms of Use</a>
+        <div>
+            &nbsp;</div>
+    </div>
+    <div id="footer-sub">
+        <asp:Menu ID="Menu2" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal"
+            Width="350px" CssClass="menu-main" MaximumDynamicDisplayLevels="0" />
+    </div>
+    </form>
+    <!-- Yahoo! Web Analytics - All rights reserved -->
+
+    <script type="text/javascript" src="http://d.yimg.com/mi/eu/ywa.js"></script>
+
+    <script type="text/javascript">
+/*globals YWA*/
+var YWATracker = YWA.getTracker("10001795711771");
+//YWATracker.setDocumentName("");
+//YWATracker.setDocumentGroup("");
+YWATracker.submit();
+    </script>
+
+    <noscript>
+        <div>
+            <img src="http://s.analytics.yahoo.com/p.pl?a=10001795711771&amp;js=no" width="1"
+                height="1" alt="" /></div>
+    </noscript>
+    <!-- End of Yahoo! Web Analytics  -->
+    <!-- Google Analitics-->
+
+    <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+    <script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6194120-1");
+pageTracker._trackPageview();
+    </script>
+
+    <!-- End of Google Analitics-->
+</body>
+</html>

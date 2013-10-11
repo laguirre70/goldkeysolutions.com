@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="mobile.master.cs" Inherits="Mobile_mobile" %>
+
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=UTF-8" />
+    <title>GKS mobile</title>
+    <meta name="MobileOptimized" content="240" />
+    <meta name="keywords" content="Concierge, Concierge Assistant, Concierge Software, Service, Superb Service, Hotel, Hotel Software, Tracking Activities Software, Hospitality Software, Hospitality, VIP Services, Casino Services, Guest Services, Lost and Found, Hotel Lost and Found, Lost and Found Software, Lost and Found Program, Key Control, Key Control Software, Key Control Program, Hotel Key Control, Gold Key Software, Go Concierge, GoConcierge, Web Based, Windows Based, The Concierge Assistant, CA Web, Voucher Software, Voucher Assistant, Accounting Software, PCI, PCI Compliant, Visa, PCI-DDS" />
+    <meta name="Description" content="Gold Key Solutions develops the best Concierge Guest, Services and Hospitality Software." />
+    <meta name="copyright" content="Copyright (c) 2009 Gold Key Solutions, Inc. All rights reserved." />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="text-align: center; margin-top: 15px">
+        <img src="../images/GKSmobile-Long.jpg" alt="Gold Key Solutions, Inc." /><br />
+        818-865-0006 | <a href="mailto:info@GoldKeySolutions.com">info@GoldKeySolutions.com</a>
+    </div>
+    <div style="margin-left:5px;">
+        <hr />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div style="text-align: center">
+        <hr />
+        <a href="Default.aspx">Home</a> | <a href="Products.aspx" target="_self">Products</a>
+        | <a href="ContactUs.aspx" target="_self">Contact Us</a> | <a href="Support.aspx">Support</a>
+    </div>
+    </form>
+</body>
+</html>

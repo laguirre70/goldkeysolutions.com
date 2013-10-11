@@ -1,0 +1,93 @@
+body{
+	background:#AAAA88 url(Images/gradient.jpg) repeat-x;  
+	margin:2px;
+	padding:0 auto;
+	font:Arial, Helvetica, sans-serif, "Trebuchet MS";
+	color:#ffffff;
+	text-align:center;
+	}
+/* Font
+---------------------------------------------------------------------*/
+a {color:#DEDECF; text-decoration:none;}
+a:hover{color:#DEDECF; background:#ABAD85;}    
+a:visited{color:#E8E9BE;}
+a.active{color:#ffffff;}
+
+a.support {font: .8em "Trebuchet MS", Arial, sans-serif;Color:#DEDECF;padding: 5px;padding-left: 17px;background: transparent url(images/support_icon.ico) no-repeat center left;text-decoration: none;line-height:26px; }          
+a.support:hover {padding: 5px;padding-left: 17px;background: url(images/support_icon.ico) no-repeat center left #ABAD85;text-decoration: none;line-height:26px; } 
+a.tutorial {font: .8em "Trebuchet MS", Arial, sans-serif;Color:#DEDECF;padding: 5px;padding-left: 17px;background: transparent url(images/book.ico) no-repeat center left;text-decoration: none;line-height:26px; }          
+a.tutorial:hover {padding: 5px;padding-left: 17px;background: url(images/book.ico) no-repeat center left #ABAD85;text-decoration: none;line-height:26px; }
+a.pdf { font: 1em "Trebuchet MS", Arial, sans-serif;Color:#DEDECF;text-decoration: none;padding-left: 18px;background: transparent url(images/icon_pdf.gif) no-repeat center left;} 
+a.pdf:hover {background: url(images/icon_pdf.gif) no-repeat center left #ABAD85;}     
+a.mailto {font: 1em "Trebuchet MS", Arial, sans-serif;Color:#DEDECF;text-decoration: none;padding-left: 20px; background: transparent url(images/icon_mailto.gif) no-repeat center left;}
+a.mailto:hover {background: url(images/icon_mailto.gif) no-repeat center left #ABAD85;}
+a.phone { font: 1em "Trebuchet MS", Arial, sans-serif #DEDECF;text-decoration: none;padding-left: 20px;background: transparent url(images/phone.ico) no-repeat center left;}
+a.home {font: 1em "Trebuchet MS", Arial, sans-serif; color:#DEDECF;padding:5px 5px 5px 17px;background: transparent url(images/home.ico) no-repeat center left;text-decoration:none; line-height:24px; } 
+a.home:hover {background: url(images/home.ico) no-repeat center left #ABAD85;}   
+a.Arrowlink {font: .8em "Trebuchet MS", Arial, sans-serif; Color:#DEDECF;text-decoration: none;}
+a.Arrowlink:hover {background: #ABAD85; color:#003366;}
+a.ca { font: 1em "Trebuchet MS", Arial, sans-serif;Color:#DEDECF;text-decoration: none;padding-left: 25px;background: transparent url(images/ca90816x16.gif) no-repeat center left;} 
+a.ca:hover {background: url(images/ca90816x16.gif) no-repeat center left #ABAD85;}
+ 
+p.title {font: 1.5em "Verdana", Arial, Helvetica, sans-serif;margin-bottom:0.1em;}  
+p.copyright{font: 0.8em "Verdana", Arial, Helvetica, sans-serif; text-align: center;}   
+p.c1 {text-align: center}
+p.c2 {text-align: left} 
+p.c3 {text-align: right} 
+/* 
+---------------------------------------------------------------------*/
+#wrapper{width:1010px; height:auto; background-color:#336699; margin:0 auto; padding:5px;}
+/* Header
+--------------------------------------------*/
+.header{width:100%; height:130px; margin:0px; padding:0px;}
+
+.logo{width:116px; background:#fff; margin:0px; padding:0px; float:left;} 
+b.ltop, b.lbottom{display:block; background:#336699;} 
+b.ltop b, b.lbottom b{display:block; height: 1px;overflow: hidden; background:#fff;} 
+b.l1{margin: 0 5px;} 
+b.l2{margin: 0 3px;} 
+b.l3{margin: 0 2px;} 
+b.ltop b.l4, b.lbottom b.l4{margin: 0 1px;height: 2px;} 
+
+.headercontent{width:87.9%; background:#003366;margin:0px; padding:0px; float:right;} 
+b.hctop, b.hcbottom{display:block; background:#336699;} 
+b.hctop b, b.hcbottom b{display:block; height: 1px;overflow: hidden; background:#003366;} 
+b.hc1{margin: 0 5px;} 
+b.hc2{margin: 0 3px;} 
+b.hc3{margin: 0 2px;} 
+b.hctop b.hc4, b.hcbottom b.hc4{margin:0 1px;height:2px;} 
+
+.headercontainer{height:120px; padding:0px 10px;}
+.home{text-align:right;}
+.CAtitle {color: #ffffff;text-align: left;vertical-align:text-bottom;}
+.CAslogan {font: .8em "Trebuchet MS", Arial, sans-serif; text-indent: 3px; color: #ffffff; margin-top: 0.1em;}
+     
+/* msg
+--------------------------------------------*/
+.msg{width:100%-20px; padding:6px 20px 6px 0px; text-align:right;}
+/*main
+--------------------------------------------*/
+.main{height:auto; background-color:#003366; padding:5px;}
+.content{width:100%-40px; padding:20px; font:0.9em "bitstream vera sans", verdana, sans-serif; text-align:left;}
+.submenu{width:100%; height:28px;}
+.submenuleft{width:15%; height:28px; background: #003366; float:left; border-bottom: 2px solid black;}
+.submenuright{width:85%; height:28px; line-height:28px; float:right; border-bottom: 2px solid black; position:relative;}
+
+.submenuright ul{width:100%; margin:0px; padding:0px; height:26px; position:absolute; top:3px; left:0;}
+.submenuright li{list-style-type:none; margin-left:4px; float:left;}
+.submenuright a{height:17px; background: #898B5E; padding:3px 5px 3px 5px; border:2px solid black; display:block; color:#DEDECF; font:0.8em "Trebuchet MS", Arial, sans-serif; text-decoration: none; line-height:17px;}
+.submenuright a:hover {background:#ADC09F; }
+.pressreleases{ width:92px !important; height:17px; background: #898B5E; padding:3px 5px 3px 5px; border:2px solid black; display:block; color:#DEDECF; font:0.8em "Trebuchet MS", Arial, sans-serif; text-decoration: none; line-height:17px; }
+/*For IE6.0
+-------------------*/	
+*html .submenuright a{width:60px;height:17px; background: #898B5E; padding:3px 5px 3px 5px; border:2px solid black; display:block; color:#DEDECF; font:0.8em "Trebuchet MS", Arial, sans-serif; text-decoration: none; line-height:17px;}
+
+.submenuright a.current {background:#336699; padding:3px 5px 3px 5px; border-left:2px solid black;border-top:2px solid #black;border-right:2px solid black; border-bottom:2px solid #336699;}
+
+.submenumain{width:100%-10px; height:auto; clear:both; margin:0px; padding:0px; background:#898B5E; border-right:2px solid black; border-bottom:2px solid black; border-left:2px solid black;}
+/*For IE7.0
+-------------------*/	 
+*+html .submenumain{width:100%-10px; height:auto; clear:both; margin-top:2px; padding:0px; background:#898B5E; border-right:2px solid black; border-bottom:2px solid black; border-left:2px solid black; }
+
+.submenumainleft{width:13%; float:left; display:block;}
+.submenumainright{width:86.9%;  background: #336699; float:right; border-left:1px solid white;}

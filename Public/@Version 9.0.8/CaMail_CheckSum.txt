@@ -1,0 +1,4 @@
+//
+// File Checksum Integrity Verifier version 2.05.
+//
+8999c6416f16c6e140401f7ead460c2d camail.exe

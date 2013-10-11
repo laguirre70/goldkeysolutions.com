@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <title>GKS Driving Directions</title>
+    <link rel="stylesheet" media="print" title="Printer-Friendly Style" type="text/css"
+        href="printStyle.css" />
+
+    <script src="http://maps.google.com/maps/api/js?sensor=false"
+        type="text/javascript"></script>
+
+    <style type="text/css">
+        body
+        {
+            font-family: Verdana, Arial, sans serif;
+            font-size: 11px;
+            margin: 2px;
+        }
+        
+        #content
+        {   
+            margin: 0 auto;
+            text-align: center;
+            width: 800px;
+        }
+        #GetDir
+        {
+            background-color: #EEEEEE;
+            width: 800px;
+        }
+        table.directions th
+        {   
+           
+            background-color: #EEEEEE;
+        }
+        table
+        {
+            text-align: left;
+        }
+        img
+        {
+            color: #000000;
+        }
+        #disclaimer
+        {   
+            margin: 0 auto;
+            font-size: smaller;
+            width: 700px;
+            text-align: justify;
+        }
+        .PageBreak
+        {
+            page-break-before: always;
+        }
+    </style>
+
+    <script type="text/javascript">
+ 
+    var map;
+    var gdir;
+    var geocoder = null;
+    var addressMarker;
+    var GlobalFrom;
+      
+    function initialize() {
+      if (GBrowserIsCompatible()) {      
+        map = new GMap2(document.getElementById("map_canvas"));
+        gdir = new GDirections(map, document.getElementById("directions"));
+        // GEvent.addListener(gdir, "load", onGDirectionsLoad); //Removed becuase "addoverlay"
+        GEvent.addListener(gdir, "error", handleErrors);
+        GEvent.addListener(gdir, "addoverlay", onGDirectionsAddOverlay); // Triggers marker swap
+        
+        map.setCenter(new GLatLng(0,0),0);	// inital setCenter() 
+        map.addControl(new GSmallMapControl());
+        map.addControl(new GMapTypeControl());
+         if (Request.QueryString.Item("from")== null)
+        {
+            var stringurlfrom = document.getElementById("fromAddress").value;
+            }
+            else
+            {
+            var stringurlfrom = Request.QueryString.Item("from");
+            document.getElementById("fromAddress").value = stringurlfrom;
+                        }
+         if (Request.QueryString.Item("to")== null)
+        {
+            var stringurlto = document.getElementById("toAddress").value;
+        }
+            else
+            {
+            var stringurlto = Request.QueryString.Item("to");
+            document.getElementById("toAddress").value = stringurlto;
+           }
+           if (Request.QueryString.Item("ID")== null)
+        {
+            document.getElementById("Cust_Logo").innerHTML = "";
+            document.getElementById("LogoCero").innerHTML = "";
+        }
+            else
+            {
+            var stringurlID = Request.QueryString.Item("ID");
+             if (Request.QueryString.Item("ID")== 0)
+             {document.getElementById("LogoCero").innerHTML = "Please contact us at 818-865-0006 or <a href='mailto:support@goldkeysolutions.com?Subject=Logo for Google Maps'>support@goldkeysolutions.com<a/> <br />to include your logo in this form.<br /><br />";
+            document.getElementById("Cust_Logo").innerHTML = "<img src='Cust_Logos/" + stringurlID + ".gif' />";
+            }
+            else
+            {
+                document.getElementById("Cust_Logo").innerHTML = "<img src='Cust_Logos/" + stringurlID + ".gif' />";
+
+            }
+           }
+         
+      }
+        setDirections(stringurlfrom, stringurlto, "G_TRAVEL_MODE_DRIVING", "en_US");
+      }
+      
+       
+    function setDirections(fromAddress, toAddress, travelmode, locale) 
+    {
+        if (travelmode == "G_TRAVEL_MODE_DRIVING")
+        {
+      gdir.load("from: " + fromAddress + " to: " + toAddress, {"travelMode": G_TRAVEL_MODE_DRIVING, "locale": locale , "getSteps":true});
+      document.getElementById("dirtitle").innerHTML = "Driving Directions";}
+      else 
+      {gdir.load("from: " + fromAddress + " to: " + toAddress, {"travelMode": G_TRAVEL_MODE_WALKING, "locale": locale , "getSteps":true});
+      document.getElementById("dirtitle").innerHTML = "Walking Directions";}
+       
+    }
+    
+       
+    function handleErrors(){
+	   if (gdir.getStatus().code == G_GEO_UNKNOWN_ADDRESS)
+	     alert("No corresponding geographic location could be found for one of the specified addresses. This may be due to the fact that the address is relatively new, or it may be incorrect.\nError code: " + gdir.getStatus().code);
+	   else if (gdir.getStatus().code == G_GEO_SERVER_ERROR)
+	     alert("A geocoding or directions request could not be successfully processed, yet the exact reason for the failure is not known.\n Error code: " + gdir.getStatus().code);
+	   
+	   else if (gdir.getStatus().code == G_GEO_MISSING_QUERY)
+	     alert("The HTTP q parameter was either missing or had no value. For geocoder requests, this means that an empty address was specified as input. For directions requests, this means that no query was specified in the input.\n Error code: " + gdir.getStatus().code);
+
+	//   else if (gdir.getStatus().code == G_UNAVAILABLE_ADDRESS)  <--- Doc bug... this is either not defined, or Doc is wrong
+	//     alert("The geocode for the given address or the route for the given directions query cannot be returned due to legal or contractual reasons.\n Error code: " + gdir.getStatus().code);
+	     
+	   else if (gdir.getStatus().code == G_GEO_BAD_KEY)
+	     alert("The given key is either invalid or does not match the domain for which it was given. \n Error code: " + gdir.getStatus().code);
+
+	   else if (gdir.getStatus().code == G_GEO_BAD_REQUEST)
+	     alert("A directions request could not be successfully parsed.\n Error code: " + gdir.getStatus().code);
+	    
+	   else alert("An unknown error occurred.");
+	   
+	}
+
+	function onGDirectionsLoad(){ 
+      // Use this function to access information about the latest load()
+      // results.
+
+      // e.g.
+      // document.getElementById("getStatus").innerHTML = gdir.getStatus().code;
+	  // and yada yada yada...
+	}
+	
+	function mapinsamepage(){
+	if (document.getElementById("PgBk").checked)
+	    document.getElementById("MapPgBk").className="";
+	else
+	    document.getElementById("MapPgBk").className="PageBreak";
+	}
+	
+	
+    
+    function reverseDirections(){
+    
+    var retdirto = document.getElementById("fromAddress").value;
+    var retdirfrom = document.getElementById("toAddress").value;
+    var rettravelmode = document.getElementById("travelmode").value;
+    var retlanguage = document.getElementById("locale").value;
+    document.getElementById("toAddress").value = retdirto;
+    document.getElementById("fromAddress").value = retdirfrom;
+    setDirections(retdirfrom, retdirto, rettravelmode, retlanguage);
+        }
+    
+    function PrintRecom(){
+    
+    var prntrecom = document.getElementById("PrntRecom");
+    prntrecom.style.visibility = 'visible';
+    prntrecom.style.height= 'auto';
+    
+    }
+    
+    function HidePrintRecom(){
+    
+    var hiderecom = document.getElementById("PrntRecom");
+    hiderecom.style.visibility = 'hidden';
+    hiderecom.style.height= '10px';
+    
+    }
+    
+    ///////////////////////////////////////////////////////////////////////
+
+/**
+* The add-on code for draggable markers
+* @author Esa 2008
+*/
+
+var newMarkers = [];
+var latLngs = [];
+var icons = [];
+
+// Note the 'addoverlay' GEvent listener inside initialize() function of the original code (above).
+// 'load' event cannot be used
+
+function onGDirectionsAddOverlay(){ 
+  // Remove the draggable markers from previous function call.
+  for (var i=0; i<newMarkers.length; i++){
+    map.removeOverlay(newMarkers[i]);
+  }
+
+  // Loop through the markers and create draggable copies
+  for (var i=0; i<=gdir.getNumRoutes(); i++){
+    var originalMarker = gdir.getMarker(i);
+    latLngs[i] = originalMarker.getLatLng();
+    icons[i] = originalMarker.getIcon();
+    newMarkers[i] = new GMarker(latLngs[i],{icon:icons[i], draggable:true, title:'Draggable'});
+    map.addOverlay(newMarkers[i]);
+
+    // Get the new waypoints from the newMarkers array and call loadFromWaypoints by dragend
+    GEvent.addListener(newMarkers[i], "dragend", function(){
+      var points = [];
+      for (var i=0; i<newMarkers.length; i++){
+        points[i]= newMarkers[i].getLatLng();
+      }
+      gdir.loadFromWaypoints(points);
+    });
+
+    //Bind 'click' event to original markers 'click' event
+    copyClick(newMarkers[i],originalMarker);
+
+    // Now we can remove the original marker safely
+    map.removeOverlay(originalMarker);
+  }
+
+  function copyClick(newMarker,oldMarker){
+    GEvent.addListener(newMarker, 'click', function(){
+      GEvent.trigger(oldMarker,'click');
+    });
+  }
+}
+    </script>
+
+    <!-- Njavascript querystring script to the page ... -->
+    <script type="text/javascript" src="CSJSRequestObject.js"></script>
+    <!-- Request.QueryString commands are no available. -->
+
+
+</head>
+<body onload="initialize()" onunload="GUnload()">
+    <noscript>
+        <b>JavaScript must be enabled in order for you to use Google Maps.</b> However,
+        it seems JavaScript is either disabled or not supported by your browser. To view
+        Google Maps, enable JavaScript by changing your browser options, and then try again.
+    </noscript>
+    <div id="content">
+        <div id="Cust_Logo">
+            If you can see this Java Script is disabled in your browser!
+        </div>
+        <form action="#" onsubmit="setDirections(this.from.value, this.to.value, this.travelmode.value, this.locale.value); return false"
+        method="get" name="controls">
+        <div id="GetDir">
+        <div id="LogoCero"></div>
+            <table>
+                <tr>
+                    <th align="right">
+                        From:&nbsp;&nbsp;
+                    </th>
+                    <td>
+                        <input type='text' size='100' id='fromAddress' name='from' value='Agoura Hills, CA' />
+                    </td>
+                </tr>
+                <tr>
+                    <th align="right">
+                        To:&nbsp;&nbsp;
+                    </th>
+                    <td align="center">
+                        <input type='text' size='100' id='toAddress' name='to' value='Los Angeles, CA' />
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th></th>
+                    <td>
+                        <b>Directions Mode:&nbsp; </b>
+                        <select id="travelmode" name="travelmode">
+                            <option value="G_TRAVEL_MODE_DRIVING" selected>Driving</option>
+                            <option value="G_TRAVEL_MODE_WALKING" >Walking</option>
+                        </select>
+                        &nbsp;<b>Language:</b>&nbsp;
+                        <select id="locale" name="locale">
+                            <option value="en" selected>English</option>
+                            <option value="es">Spanish</option>
+                            <option value="fr">French</option>
+                            <option value="pt">Portuguese</option>
+			                <option value="it">Italian</option>	
+                            <option value="ru">Russian</option>
+                            <option value="de">German</option>
+                            <option value="ja">Japanese</option>
+                            <option value="zh-CN">Chinese(Simp)</option>
+                            <option value="zh-TW">Chinese(Trad)</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <input name="submit" type="submit" value="Get Directions!" />&nbsp;&nbsp; <a href="#"
+                            onclick="reverseDirections()">Reverse Directions</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <input type="button" value="Print this page" onclick="window.print()" />&nbsp;&nbsp;
+                        <input type="checkbox" name="PgBk" value="PgBk" onclick="mapinsamepage()" />Map
+                        in same page<br />
+                    </td>
+                </tr>
+            </table>
+            <div id="PrntRecomLink">
+                <a href="#" onclick="PrintRecom()">Print Recommendations</a></div>
+            <div id="PrntRecom" style="visibility: hidden; height: 10px;">
+                <ul style="text-align: left; margin-left: 125px;">
+                    <li>Find the "Page Setup" of your browser and remove the header and footer information.</li>
+                    <li>If the directions are too long the map should not be printed "In the same page"
+                        or it will be cut out. </li>
+                </ul>
+                If you need help with this page contact us at 818-865-0006 or <a href="mailto:support@goldkeysolutions.com?Subject=Help%20with%20GoogleMaps%20Page">
+                    support@goldkeysolutions.com</a><br />
+                <br />
+                <a href="#" onclick="HidePrintRecom()">Hide</a></div>
+        </div>
+        </form>
+        <h3 id="dirtitle">
+            Driving Directions</h3>
+       
+        <div id="directions" style="width: 700px;  margin: 0 auto;">
+        </div>
+        <br />
+        
+        <div id="disclaimer">
+            These directions are for planning purposes only. You may find that construction
+            projects, traffic, weather, or other events may cause conditions to differ from
+            the map results, and you should plan your route accordingly. You must obey all signs
+            or notices regarding your route.
+        </div>
+	
+        <p id="MapPgBk" class="PageBreak">
+        </p> 
+        <h3>
+            Map</h3>
+        <div id="map_canvas" style="width: 600px; height: 480px;  margin: 0 auto;">
+        </div>
+      
+        <br />
+        Powered by <a href="http://maps.google.com/">GoogleMaps</a>
+    </div>
+</body>
+</html>

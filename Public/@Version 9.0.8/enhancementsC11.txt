@@ -1,0 +1,54 @@
+****************
+From C9 to C11
+****************
+(1)	The option to use Google Maps has been added.
+
+****************
+From C8 to C9
+****************
+(1)	The CSV export utility was updated to now include Guest ID and have both Entry and Reference dates. The ability to run the export from the archive was added but only to the ACCESS version. The main limitation with the archive is that you are not able to filer by profile types.
+(2)	The CA was updated in version C4 to look at file version information when doing a compare with the executable on the server. This did not work well because we are using sub versions that don’t show up in the file version info. This has been corrected and will now only look at the file date/time when comparing.
+(3)	The CA had a problem with the Error messages being displayed as they had no information on where the error was coming from. Replaced all generic error messages (almost 500) with ones that have a bit more description by displaying where the error actually occurred.
+
+(SQL only)	Updated the Database Properties window to show the SQL Database Connection string correctly if you hit CANCEL from the logon and then F8.
+
+(ODS Limo Enhancement)
+•	Add ‘OdsLimoCodes’ table.
+•	Add ‘OdsLimoMapping’ table.
+•	Add ‘ODS Limo’ to the Interface Options form. This will be enable if the key “OdsLimoInterface=True” in the CA Settings Table.
+•	Added new Transmit to ODS from the Logbook Back Panel when we’re on the ODS Limo entry.
+
+****************
+From C7 to C8
+****************
+(1)	Added a separate 'Print' button on the main toolbar to eliminate error in some clients.
+(2)	No longer save the Window State when the CA is minimized. Also no longer allow CA to start minimized.
+(3)	Adjusted the Logon Form so it will now be placed in the center of the CA instead of the center of the screen.
+(4)	Created a 10 character limit on ALL passwords. Encrypting the password increases the number of characters, the database have a 50 character max.
+(5)	Fixed Error 381 Other/Reservation System. After a category selection was made, that category variable remained in memory after the Reservation form was closed. 
+(6)	The Reservation System did not prompt you with a warning if you attempted to book a time which has been blocked out when you had the same Starting and Ending time.
+(7)	Modified the Itinerary to use the user defined Arrival Date format.
+(8)	Updated the Document Manager to display the location of the selected document when you double-click on it. 
+(9)	Clicking on the V-Printer in the Logbook Report Writer would automatically re-sort by name. This has been fixed and will no longer change the user defined sort.
+(10)	Moved the EXPORT button down to the bottom next to the Save and Exit because it would cover up longer categories.
+
+****************
+From C6 to C7
+****************
+-Print option for Refence Time.
+-Fixed bug (error 3265: Item not found in this collection) in prefered categories. It only occurred when the user had not accesses to "all" categories.
+-Improved Error traping (add description to errors)
+-Conf, and tracking numbers fields data that match CC algorithm will be identified as "suspicious activity"
+-Added the DNP Refer Time to the Itinerary by Guest ID 
+
+******************
+From C5 to C6.
+******************
+Updated the Export feature to:
+(1) Correcty save the export definition. It was not returning the new record ID from a "select @@identity".
+(2) The export was not grabbing anything from the LogText table for long logbook back panel items.
+(3) An error was occurring when you tried to export but the path wasn't valid. 
+
+Logbook Back Panel:
+(1) Moved the 'Exit and Save' button to the bottom.
+(2) Hid the language combo box.
